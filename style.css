@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  background: #232946;
+  color: #eebbc3;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.star-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+main {
+  max-width: 600px;
+  margin: 60px auto 0 auto;
+  padding: 20px;
+  background: rgba(43, 55, 93, 0.92);
+  border-radius: 20px;
+  box-shadow: 0 4px 32px #141a2e60;
+}
+.intro-card {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #eebbc3;
+  box-shadow: 0 2px 16px #141a2e60;
+  margin-bottom: 1em;
+  background: #fff;
+}
+.rainbow {
+  background: linear-gradient(90deg, #eebbc3, #a3cef1, #ffb347, #f67280, #eebbc3);
+  background-size: 200% auto;
+  color: #fff;
+  padding: 0 8px;
+  border-radius: 8px;
+  animation: rainbow-move 2s linear infinite;
+}
+@keyframes rainbow-move {
+  0% { background-position: 0% 50%;}
+  100% {background-position: 100% 50%;}
+}
+.typewriter {
+  font-size: 1.35em;
+  min-height: 2.5em;
+  font-weight: bold;
+  background: #23294655;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+#random-fact-btn {
+  background: #ffb347;
+  color: #232946;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #23294630;
+  transition: background 0.2s;
+}
+#random-fact-btn:hover {
+  background: #f67280;
+  color: #fff;
+}
+#random-fact {
+  margin: 1em auto 0 auto;
+  min-height: 1.5em;
+  font-style: italic;
+  color: #a3cef1;
+  transition: color 0.3s;
+}
+.hobbies-section {
+  margin: 2em 0 2em 0;
+  text-align: center;
+}
+.hobbies-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-height: 110px;
+  margin-top: 1em;
+}
+.hobby-card {
+  background: #eebbc3;
+  color: #232946;
+  padding: 16px 20px;
+  border-radius: 16px;
+  font-size: 1.15em;
+  font-weight: 600;
+  box-shadow: 0 2px 12px #23294630;
+  transition: transform 0.2s;
+  min-width: 140px;
+}
+.hobby-card.active {
+  background: #a3cef1;
+  color: #232946;
+  transform: scale(1.15);
+}
+.hobby-arrow {
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: #a3cef1;
+  cursor: pointer;
+  transition: color 0.2s;
+  user-select: none;
+}
+.hobby-arrow:hover {
+  color: #ffb347;
+}
+.contact-section {
+  text-align: center;
+  margin-top: 2em;
+}
+.contact-section a {
+  color: #a3cef1;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+.contact-section a:hover {
+  color: #ffb347;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #eebbc3aa;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+.heart {
+  color: #f67280;
+  animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1);}
+  20% { transform: scale(1.2);}
+  40% { transform: scale(0.95);}
+  60% { transform: scale(1.1);}
+  80% { transform: scale(0.98);}
+}
+@media (max-width: 700px) {
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+  .avatar {
+    width: 90px;
+    height: 90px;
+  }
+}
