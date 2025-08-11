@@ -201,3 +201,11 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 16px #141a2e60;
 }
+.dog-description {
+    margin-top: 1em;
+    color: #b8c1ec;
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding: 0 1em;
+    text-align: center;
+}
