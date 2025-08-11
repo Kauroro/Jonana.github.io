@@ -160,3 +160,44 @@ footer {
     height: 90px;
   }
 }
+.picture-section {
+  text-align: center;
+  margin: 2em 0;
+}
+
+#show-picture-btn {
+  background: #a3cef1;
+  color: #232946;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #23294630;
+  transition: background 0.2s;
+}
+
+#show-picture-btn:hover {
+  background: #ffb347;
+  color: #232946;
+}
+
+#picture-container {
+  margin-top: 1em;
+  transition: opacity 0.3s;
+}
+
+#picture-container.hidden {
+  display: none;
+}
+
+.picture-title {
+  color: #ffb347;
+  margin-bottom: 1em;
+}
+
+.special-picture {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #141a2e60;
+}

@@ -36,9 +36,11 @@ document.getElementById('random-fact-btn').addEventListener('click', () => {
 // Hobbies carousel
 const hobbies = [
   { icon: "📚", text: "I love reading books!" },
-  { icon: "🎨", text: "I love reading webtoons/manhwa" },
-  { icon: "🎮", text: "When I'm bored I watch anime, horror movies, live streams and youtube contents" },
-  { icon: "🎵", text: "I like to draw random stuff" },
+  { icon: "📖", text: "I love reading webtoons/manhwa" },
+  { icon: "📺", text: "When I'm bored I watch anime, horror movies, live streams and youtube contents" },
+  { icon: "🎨", text: "I like to draw random stuff" },
+  { icon: "🍫", text: "I love dark chocolate"},
+  { icon: "😁", text: "may crush sa Electrical Engineering Department"},
 ];
 let hobbyIndex = 0;
 function renderHobbies() {
@@ -83,3 +85,14 @@ function createStar() {
   document.querySelector('.star-bg').appendChild(star);
 }
 for (let i = 0; i < 80; i++) createStar();
+// Add this to your existing script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const showPictureBtn = document.getElementById('show-picture-btn');
+    const pictureContainer = document.getElementById('picture-container');
+    
+    showPictureBtn.addEventListener('click', function() {
+        pictureContainer.classList.toggle('hidden');
+        showPictureBtn.textContent = pictureContainer.classList.contains('hidden') ? 
+            'Show Picture' : 'Hide Picture';
+    });
+});
